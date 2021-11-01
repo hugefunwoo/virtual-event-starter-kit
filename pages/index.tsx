@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { SkipNavContent } from '@reach/skip-nav';
 
@@ -37,6 +38,9 @@ export default function Conf() {
 
   return (
     <Page meta={meta} fullViewport>
+      <div style={{ position: 'absolute', width: '100vw', height: '100vh' }}>
+        <Image src="/shuan.jpg" layout="responsive" width={2880} height={1800} />
+      </div>
       <SkipNavContent />
       <ConfContent
         defaultUserData={defaultUserData}

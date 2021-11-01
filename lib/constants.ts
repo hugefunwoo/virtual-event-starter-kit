@@ -20,8 +20,7 @@ export const TWITTER_USER_NAME = 'vercel';
 export const BRAND_NAME = 'Global Woman Impact Summit';
 export const SITE_NAME_MULTILINE = ['Global', 'Woman', 'Impact', 'Summit'];
 export const SITE_NAME = 'GWIS';
-export const META_DESCRIPTION =
-  'This is an open source demo that Next.js developers can clone, deploy, and fully customize for events. Created through collaboration of marketers, designers, and developers at Vercel.';
+export const META_DESCRIPTION = 'Womany on Next.js demo';
 export const SITE_DESCRIPTION = 'Diverse and Inclusive Tomorrow';
 export const DATE = 'December 5, 2021';
 export const SHORT_DATE = 'Dec 5 - 9:00am CST';
@@ -40,27 +39,23 @@ export const REPO = 'https://github.com/vercel/virtual-event-starter-kit';
 export const SAMPLE_TICKET_NUMBER = 1234;
 export const NAVIGATION = [
   {
-    name: 'Stage A',
-    route: '/stage/a'
+    name: 'Articles',
+    route: '/articles'
   },
   {
-    name: 'Stage C',
-    route: '/stage/c'
+    name: 'D&I',
+    route: '/stage/d&i'
   },
   {
-    name: 'Stage M',
-    route: '/stage/m'
+    name: 'GWIS',
+    route: '/stage/gwis'
   },
   {
-    name: 'Stage E',
-    route: '/stage/e'
-  },
-  {
-    name: 'Schedule',
+    name: '行程',
     route: '/schedule'
   },
   {
-    name: 'Speakers',
+    name: '講者',
     route: '/speakers'
   },
   {

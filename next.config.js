@@ -15,6 +15,14 @@
  */
 
 module.exports = {
+  async rewrites() {
+    return [
+      {
+        source: '/womany',
+        destination: 'https://api.womany.net',
+      }
+    ];
+  },
   images: {
     domains: [
       'www.datocms-assets.com',
@@ -24,6 +32,12 @@ module.exports = {
       'cdn.aglty.io',
       'localhost' // For Strapi
     ],
-    imageSizes: [24, 64, 300]
-  }
+    imageSizes: [24, 64, 300],
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
 };

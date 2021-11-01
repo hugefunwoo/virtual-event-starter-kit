@@ -21,6 +21,7 @@ import '@styles/chrome-bug.css';
 import type { AppProps } from 'next/app';
 import NProgress from '@components/nprogress';
 import ResizeHandler from '@components/resize-handler';
+import Theme from '@components/Theme';
 import { useEffect } from 'react';
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -30,9 +31,11 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <SSRProvider>
       <OverlayProvider>
-        <Component {...pageProps} />
-        <ResizeHandler />
-        <NProgress />
+        <Theme>
+          <Component {...pageProps} />
+          <ResizeHandler />
+          <NProgress />
+        </Theme>
       </OverlayProvider>
     </SSRProvider>
   );
